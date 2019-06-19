@@ -166,7 +166,7 @@ function updateGameArea() {
     if (myGameArea.keys && myGameArea.keys[37]) {myGamePiece.speedX = -1;myGamePiece.image.src = "bluebird-midflap.png"}
     if (myGameArea.keys && myGameArea.keys[39]) {myGamePiece.speedX = 1; myGamePiece.image.src = "bluebird-midflap.png" }
     if (myGameArea.keys && myGameArea.keys[38]) {accelerate(-0.1); myGamePiece.image.src = "bluebird-downflap.png" }
-    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speedY = 1; myGamePiece.image.src = "bluebird.png" }
+    if (myGameArea.keys && myGameArea.keys[40]) {myGamePiece.speedY = 1; myGamePiece.image.src = "bluebird-upflap.png" }
     if (myGameArea.keys && myGameArea.keys[38] == false){accelerate(0.05)}
     myScore.text = "SCORE: " + myGameArea.frameNo;
     myScore.update();
